@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Reese Web Design</title>
+
   <style>
     * {
       margin: 0;
@@ -135,12 +136,31 @@
       background: #020617;
     }
 
+    .about-wrapper {
+      max-width: 1000px;
+      margin: 45px auto 0;
+      display: grid;
+      grid-template-columns: 300px 1fr;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .about-photo img {
+      width: 100%;
+      border-radius: 20px;
+      border: 3px solid #38bdf8;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.35);
+      display: block;
+    }
+
     .about-content {
-      max-width: 900px;
-      margin: auto;
-      text-align: center;
       color: #cbd5e1;
       font-size: 18px;
+      text-align: left;
+    }
+
+    .about-content p {
+      margin-bottom: 18px;
     }
 
     .process {
@@ -199,8 +219,18 @@
       }
 
       .services,
-      .process {
+      .process,
+      .about-wrapper {
         grid-template-columns: 1fr;
+      }
+
+      .about-photo {
+        max-width: 280px;
+        margin: auto;
+      }
+
+      .about-content {
+        text-align: center;
       }
 
       nav {
@@ -209,10 +239,12 @@
     }
   </style>
 </head>
+
 <body>
 
   <header>
     <div class="logo">Reese Web Design</div>
+
     <nav>
       <a href="#services">Services</a>
       <a href="#about">About</a>
@@ -224,16 +256,19 @@
   <section class="hero">
     <div>
       <h1>Helping Small Businesses Look Professional Online</h1>
+
       <p>
         I build clean, mobile-friendly websites for restaurants, bakeries, barbers,
         beauty brands, local shops, and service-based businesses that need a stronger
         online presence.
       </p>
+
       <a href="#contact" class="btn">Request a Website</a>
     </div>
 
     <div class="hero-card">
       <h2>Your Business Deserves a Website That Works</h2>
+
       <p>
         Whether you need a simple homepage, menu page, booking link, online ordering button,
         contact form, or full business website, I help make your business easier to find,
@@ -244,6 +279,7 @@
 
   <section id="services">
     <h2 class="section-title">Website Services</h2>
+
     <p class="section-subtitle">
       Simple website solutions built for small businesses that want to look professional without making the process complicated.
     </p>
@@ -251,6 +287,7 @@
     <div class="services">
       <div class="service-card">
         <h3>Business Websites</h3>
+
         <p>
           Professional websites with home, about, services, contact, and location sections.
         </p>
@@ -258,6 +295,7 @@
 
       <div class="service-card">
         <h3>Restaurant & Bakery Sites</h3>
+
         <p>
           Menu pages, photo sections, online ordering buttons, catering info, and contact details.
         </p>
@@ -265,6 +303,7 @@
 
       <div class="service-card">
         <h3>Booking & Ordering Setup</h3>
+
         <p>
           Help connecting booking links, payment links, Square, Toast, Shopify, or other order platforms.
         </p>
@@ -274,17 +313,31 @@
 
   <section id="about" class="about">
     <h2 class="section-title">About Reese Web Design</h2>
-    <div class="about-content">
-      <p>
-        Reese Web Design helps small businesses build a clean and trustworthy online presence.
-        Many local businesses rely only on social media, but a website gives customers one clear place
-        to learn who you are, what you offer, where you are located, and how to contact or order from you.
-      </p>
+
+    <div class="about-wrapper">
+      <div class="about-photo">
+        <img src="professional image.png" alt="Owner of Reese Web Design">
+      </div>
+
+      <div class="about-content">
+        <p>
+          Reese Web Design helps small businesses build a clean and trustworthy online presence.
+          Many local businesses rely only on social media, but a website gives customers one clear place
+          to learn who you are, what you offer, where you are located, and how to contact or order from you.
+        </p>
+
+        <p>
+          My goal is to make the website process simple for business owners. From planning the layout
+          to connecting contact forms, booking links, online ordering buttons, and domains, I help small
+          businesses look more professional online without making the process overwhelming.
+        </p>
+      </div>
     </div>
   </section>
 
   <section id="process">
     <h2 class="section-title">How It Works</h2>
+
     <p class="section-subtitle">
       A simple process to help get your business online.
     </p>
@@ -318,9 +371,11 @@
 
   <section id="contact" class="contact">
     <h2 class="section-title">Ready to Build Your Website?</h2>
+
     <p>
       Send your business name, what you offer, and what kind of website you need.
     </p>
+
     <a href="mailto:yourbusiness@email.com" class="btn">Request a Website</a>
   </section>
 
